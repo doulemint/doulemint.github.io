@@ -4,13 +4,13 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-
+relative_permalinks: true
 
 # Setup
 title:            Liu xiya
-tagline:          'A Jekyll theme'
+tagline:          ''
 description:      ''
-url:              http://
+url:              http://doulemint.github.io/
 baseurl:          /
 
 author:
