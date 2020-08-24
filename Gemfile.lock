@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    jekyll-paginate-category (0.1.2)
+    wdm (0.1.1)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  jekyll-paginate-category
+  wdm (>= 0.1.0)
+
+BUNDLED WITH
+   2.1.4

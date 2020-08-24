@@ -1,9 +1,10 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
+<<<<<<< Updated upstream
 
 
 # Setup
@@ -11,6 +12,14 @@ title:            Hyde
 tagline:          'A Jekyll theme'
 description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:              http://hyde.getpoole.com
+=======
+
+# Setup
+title:            Liu xiya
+tagline:          ''
+description:      'cool girls know how to code'
+url:              http://doulemint.github.io/
+>>>>>>> Stashed changes
 baseurl:          /
 
 author:
@@ -20,7 +29,22 @@ author:
 paginate:         5
 
 # Custom vars
+<<<<<<< Updated upstream
 version:          2.1.0
 
 github:
   repo:           https://github.com/poole/hyde
+=======
+version:          1.0
+
+github:
+  repo:           https://github.com/doulemint/doulemint.github.io
+
+plugins:          [jekyll-paginate]
+# Gems
+#gems:             [jekyll-paginate]
+    # This will require each of these gems automatically.
+    #Could not find gem 'my-jekyll-plugin x64-mingw32' in any of the gem sources listed in your Gemfile.
+
+port: 4001
+>>>>>>> Stashed changes
