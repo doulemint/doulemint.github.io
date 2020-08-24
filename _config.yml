@@ -10,6 +10,7 @@ title:            Liu xiya
 tagline:          ''
 description:      'cool girls know how to code'
 url:              http://doulemint.github.io/
+baseurl:          /
 
 version:          1.0
 
