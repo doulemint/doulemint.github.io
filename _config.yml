@@ -1,26 +1,21 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            Liu xiya
 tagline:          ''
-description:      ''
+description:      'cool girls know how to code'
 url:              http://doulemint.github.io/
-baseurl:          /
 
-author:
-  name:
-  url:
-
-paginate:         5
-
-# Custom vars
-version:
+version:          1.0
 
 github:
-  repo:
+  repo:           https://github.com/doulemint/doulemint.github.io
+
+plugins:          [jekyll-paginate]
+
+port: 4001

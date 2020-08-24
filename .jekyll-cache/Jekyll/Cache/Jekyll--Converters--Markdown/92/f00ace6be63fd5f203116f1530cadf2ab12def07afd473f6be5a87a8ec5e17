@@ -1,9 +1,4 @@
----
-layout: page
-title: Project
----
-
-<style>
+I"=)<style>
 .grid::after {
     content: '';
     display: block;
@@ -25,49 +20,47 @@ span{
   float: right;
 }
 </style>
+
 <div class="grid" id="top">
 	<div class="grid-item">
 		
-		<img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/459112/913523/main-image" width = "300" height = "200" alt="PaintingUnderstanding" align=center />
+		<img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/459112/913523/main-image" width="300" height="200" alt="PaintingUnderstanding" align="center" />
 		<p class="anchorlink"><a href="#a">Painting  Understanding</a></p>
 	</div>
 	
 	<div class="grid-item">
 		
-		<img src="https://images.squarespace-cdn.com/content/v1/5a4e3a9ee9bfdf1654db3b34/1516107940056-5HC9GT0GXPOUREJNRQBQ/ke17ZwdGBToddI8pDm48kOocpZx0xlvWaMfujuqmZxF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmujyyI7Frso6MRdplGTbhDuXZECgQPB9cqfz5W6M2bbtdO48clcURN-OsvwxYNGXR/EUGENIALOLI_PLASTIK20140314_03.jpg" width = "300" height = "200" alt="Collage Machine" align=center />
+		<img src="https://images.squarespace-cdn.com/content/v1/5a4e3a9ee9bfdf1654db3b34/1516107940056-5HC9GT0GXPOUREJNRQBQ/ke17ZwdGBToddI8pDm48kOocpZx0xlvWaMfujuqmZxF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmujyyI7Frso6MRdplGTbhDuXZECgQPB9cqfz5W6M2bbtdO48clcURN-OsvwxYNGXR/EUGENIALOLI_PLASTIK20140314_03.jpg" width="300" height="200" alt="Collage Machine" align="center" />
 		<p class="anchorlink"><a href="#b">Collage Machine</a></p>
 	</div>
 	
 	<div class="grid-item">
 		
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Symmetric_key_encryption.svg/800px-Symmetric_key_encryption.svg.png" width = "300" height = "200" alt="Cryptograph" align=center />
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Symmetric_key_encryption.svg/800px-Symmetric_key_encryption.svg.png" width="300" height="200" alt="Cryptograph" align="center" />
 		<p class="anchorlink"><a href="#c">Software and hardware application in cryptograph</a></p>
 	</div>
 	<div class="grid-item">
-		<img src="https://docs.nvidia.com/cuda/cuda-c-programming-guide/graphics/gpu-devotes-more-transistors-to-data-processing.png" width = "300" height = "200" alt="Cryptograph" align=center />
+		<img src="https://docs.nvidia.com/cuda/cuda-c-programming-guide/graphics/gpu-devotes-more-transistors-to-data-processing.png" width="300" height="200" alt="Cryptograph" align="center" />
 		<p class="anchorlink"><a href="#d">High Performance Aritechture</a></p>
 	</div>
 </div>
 
-
-
-----
-
+<hr />
 
 <h1 id="a">Painting  Understanding</h1>
 
 <h2>Method1</h2>
-Data augmentation has efficiently been used as a data
+<p>Data augmentation has efficiently been used as a data
 pre-processing technique that can increase the existing
 number of images for training. We separated the data into
-train and validations sets.
+train and validations sets.</p>
 
-<b>Horizontal Flip:</b> As a part of our first data augmentation
+<p><b>Horizontal Flip:</b> As a part of our first data augmentation
 technique, as seen in Figure 1., we horizontally flipped the
 image and used a zoom of 0.5 on our data, further using
-transfer learning to train the models.
+transfer learning to train the models.</p>
 
-<b>Diagonal Crop:</b> In this data augmentation method, the
+<p><b>Diagonal Crop:</b> In this data augmentation method, the
 original image is cropped along the diagonal into “n” small
 images and these cropped images are zoomed in with a
 zoom range of 3x. The resulting zoomed in patches are
@@ -76,37 +69,36 @@ patches along the last column and “n-1” patches along the
 last row. Then that image is resized to 224x224 in order to
 match the input size of our models. Figure 2. shows the
 original, diagonal crop with zoom and the new generated
-stitched image.
+stitched image.</p>
 
-<b>Step Crop:</b> In this method, the original image is cropped
+<p><b>Step Crop:</b> In this method, the original image is cropped
 along the rows into smaller images with a step in between
 and these cropped patches of images are zoomed in with
 a zoom range of 3x and stitched onto the original image
-similarly as described in the diagonal crop method.
+similarly as described in the diagonal crop method.</p>
 
-<img src="/pics/Figure1.PNG"  alt="Figure1" align=center />
- 
-Figure 1. shows the original, step-crop with zoom and the newly
-generated stitched image.
+<p><img src="/pics/Figure1.PNG" alt="Figure1" align="center" /></p>
 
-<img src="/pics/Figure2.PNG"  alt="Figure2" align=center />
+<p>Figure 1. shows the original, step-crop with zoom and the newly
+generated stitched image.</p>
 
+<p><img src="/pics/Figure2.PNG" alt="Figure2" align="center" /></p>
 
-Figure 2. Left image is original, Middle image is diagonal cropped,
-Right image is new stitched.
+<p>Figure 2. Left image is original, Middle image is diagonal cropped,
+Right image is new stitched.</p>
 
 <h2>method2</h2>
 
 <h3>Multiple channel</h3>
-To let neural network focus on brushed strokes and lines,
+<p>To let neural network focus on brushed strokes and lines,
 we manipulated images by cropping the paintings at the
 upper right, center and bottom right. Then zoom in them
 three times to obtain more detailed information. All of them
 along with the original image was resize to 224 which is the
 most adopted input size of popular neural networks and was
-concatenated them together to save in tiff file.
+concatenated them together to save in tiff file.</p>
 <h3>Network Architecture</h3>
-The first method is 21 channels images was fed into network together. 
+<p>The first method is 21 channels images was fed into network together. 
 Since the first three channel include all content of the original image. 
 More information is expected to get from here. To tackle this, we specify 
 the number of output channel of each input channel, rather than specifying the
@@ -117,9 +109,9 @@ the same as Xception net. Since some unrelated images are
 combined to together, machine may confused when it carry
 out 1x1 pointwise convolution which calculate all pixel in
 depth wise to generate new information.
-<img src="/pics/Picture1.png"  alt="Figure2" align=center />
+<img src="/pics/Picture1.png" alt="Figure2" align="center" /></p>
 
-This’s where the second method comes in. The second
+<p>This’s where the second method comes in. The second
 method was designed to convoluted through images and
 cropped images on diagonal by utilizing parallel network.
 Since the center of a painting usually contains richer information than other regions of a painting, the samll and
@@ -128,29 +120,49 @@ with Original image were fed into Xception net separably,
 the extracted feature map was sent to several combination
 of the fully connection layer and the dropout layer, finally it
 perform sigomd activation get final prediction.
-<img src="/pics/Picture2.png"  alt="Figure2" align=center />
+<img src="/pics/Picture2.png" alt="Figure2" align="center" /></p>
 
-after several trails
+<p>after several trails
 and experiments, both method failed to outperform the performance 
 of existing classification methods. 
 They all suffered from overfitting issue. Different optimizers, 
 he initializer and l2 regularizer was used though,
-it still presented a hard time of converging
+it still presented a hard time of converging</p>
 
-| Method                                                       | Architecture        | Valida Accuracy |
-|--------------------------------------------------------------|---------------------|-----------------|
-| Transfer Learning \(Original \+ Step Crop \+ Diagonal Crop\) | ResNet 101          | 76\.70          |
-| Transfer Learning\(Hyperchannel\)                            | XceptionNet         | 19\.33          |
-| Transfer Learning\(Ensemble Learning\)                       | XceptionNet\+ResNet | 30\.67          |
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Architecture</th>
+      <th>Valida Accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transfer Learning (Original + Step Crop + Diagonal Crop)</td>
+      <td>ResNet 101</td>
+      <td>76.70</td>
+    </tr>
+    <tr>
+      <td>Transfer Learning(Hyperchannel)</td>
+      <td>XceptionNet</td>
+      <td>19.33</td>
+    </tr>
+    <tr>
+      <td>Transfer Learning(Ensemble Learning)</td>
+      <td>XceptionNet+ResNet</td>
+      <td>30.67</td>
+    </tr>
+  </tbody>
+</table>
 
-To be continue...<span class="anchorlink"><a href="#top">Back to top</a></span>
+<p>To be continue…<span class="anchorlink"><a href="#top">Back to top</a></span></p>
 
-----
-
+<hr />
 
 <h1 id="b">Collage Machine</h1>
 
-There are ample mature technologies developed on how
+<p>There are ample mature technologies developed on how
 to sythesis image, generate image that close to real-life and
 how to colorize gray-scale images or videos which cover
 almost any scenario, from real-life photograph to handdrawn animation. Besides that, people also attempt to let
@@ -166,48 +178,43 @@ up, When users feed an image to the neural network, it will
 create a collage work based on original image with some
 modifications. As a result, it can learn some knowledge we
 provide in ground truth and achieve about 73% accuracy
-over training epoches
+over training epoches</p>
 
-<img src="/pics/diag.PNG"  alt="Figure1" align=center />
+<p><img src="/pics/diag.PNG" alt="Figure1" align="center" />
 Figure 1. This diagram illustrate the main procedure of implementing collage art Machine. When users provide a image as background, the collage machine need to analysis the content of the
 input, then pick several images that will compose onto this background from the corpus dataset, collage machine also need to figure out where the picked images should place, and how to place
-them
-
-
+them</p>
 
 <h2>Dataset</h2>
 
-
-<img src="/pics/gt.PNG"  alt="Figure2" align=center />
+<p><img src="/pics/gt.PNG" alt="Figure2" align="center" />
 Figure 2. sample of ground truth. In order to let neural network
 fully understand each image word in corpus, more than one version of 
 composite images were provided for each image words and
-background images
+background images</p>
 
+<p><img src="/pics/corpus.PNG" alt="Figure3" align="center" />
+Figure 3. sample of corpus</p>
 
-<img src="/pics/corpus.PNG"  alt="Figure3" align=center />
-Figure 3. sample of corpus
-
-<img src="/pics/grphcut.jpg"  alt="Figure4" align=center />
-Figure 4. segmentment software
+<p><img src="/pics/grphcut.jpg" alt="Figure4" align="center" />
+Figure 4. segmentment software</p>
 
 <h2>Network architecture</h2>
-<img src="/pics/model_plot.PNG"  alt="Figure5" align=center />
-Figure 5. the network architecture
-
+<p><img src="/pics/model_plot.PNG" alt="Figure5" align="center" />
+Figure 5. the network architecture</p>
 
 <h2></h2>
-<img src="/pics/c1.PNG"  alt="Figure6" align=center />
-<img src="/pics/c2.PNG"  alt="Figure6" align=center />
+<p><img src="/pics/c1.PNG" alt="Figure6" align="center" />
+<img src="/pics/c2.PNG" alt="Figure6" align="center" />
 Figure 6. experiment results where the left side is ground truth, the
 right side image is prediction result. The first example shows that it
 fail to producing any meaningful result and it have occlusion issue.
 The second example shows the ability of analogy. It predict the
 same segmented image word under similar background images.
 Since the dataset is small, it easily doubt that it’s a result of random
-guessing
+guessing</p>
 
-After 100 epoches training, A surprising result was presented. 
+<p>After 100 epoches training, A surprising result was presented. 
 Most result is able to learn the feature of ground
 truth, such like, it should start with outputting a name of a
 image, then following output 9 numbers as transformation
@@ -222,33 +229,26 @@ that related with a person is vacuuming. When the input
 images is food, it will predict something like someone is
 rowing a boating that a scenes what dataset has shown. The
 best accuracy we get is around 73%
-<img src="/pics/plot.PNG"  alt="Figure7" align=center />
-Figure 6. Training loss and accuracy
+<img src="/pics/plot.PNG" alt="Figure7" align="center" />
+Figure 6. Training loss and accuracy</p>
 
-As a comparison, we also try to train our dataset on Dcgan.
+<p>As a comparison, we also try to train our dataset on Dcgan.
  Training GAN is hard, usually takes several hours or
 days.
-<img src="/pics/dcgan.PNG"  alt="Figure7" align=center />
-Figure 8. DC gan <span class="anchorlink"><a href="#top">Back to top</a></span>
+<img src="/pics/dcgan.PNG" alt="Figure7" align="center" />
+Figure 8. DC gan <span class="anchorlink"><a href="#top">Back to top</a></span></p>
 
-----
-
+<hr />
 
 <h1 id="c">Software and hardware application in cryptograph</h1>
 
-to do by 8/29
+<p>to do by 8/29</p>
 
+<p><span class="anchorlink"><a href="#top">Back to top</a></span></p>
 
-
-<span class="anchorlink"><a href="#top">Back to top</a></span>
-
-----
-
+<hr />
 
 <h1 id="d">High Performance Aritechture</h1>
 
-
-
-
-
-<span class="anchorlink"><a href="#top">Back to top</a></span>
+<p><span class="anchorlink"><a href="#top">Back to top</a></span></p>
+:ET
