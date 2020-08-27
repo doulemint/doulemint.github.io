@@ -222,13 +222,13 @@ that related with a person is vacuuming. When the input
 images is food, it will predict something like someone is
 rowing a boating that a scenes what dataset has shown. The
 best accuracy we get is around 73%
-<img src="/pics/plot.PNG"  alt="Figure7" align=center />
+<img src="/pics/plot.png"  alt="Figure7" align=center />
 Figure 6. Training loss and accuracy
 
 As a comparison, we also try to train our dataset on Dcgan.
  Training GAN is hard, usually takes several hours or
 days.
-<img src="/pics/dcgan.PNG"  alt="Figure7" align=center />
+<img src="/pics/dcgan.png"  alt="Figure7" align=center />
 Figure 8. DC gan <span class="anchorlink"><a href="#top">Back to top</a></span>
 
 ----
