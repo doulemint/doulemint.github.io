@@ -2,9 +2,6 @@
 markdown:         kramdown
 highlighter:      rouge
 
-# Permalinks
-permalink:        pretty
-
 # Setup
 title:            Liu xiya
 tagline:          ''
@@ -17,6 +14,5 @@ version:          1.0
 github:
   repo:           https://github.com/doulemint/doulemint.github.io
 
-plugins:          [jekyll-paginate]
+gem:          [jekyll-paginate]
 
-port: 4001
